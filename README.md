@@ -8,6 +8,10 @@
 - MySQL
 - Composer 2+
 
+## ⚙️ Entorno Local (Windows)
+- **XAMPP es opcional**. Se puede usar para levantar Apache/MySQL rapidamente en Windows.
+- El proyecto tambien funciona con cualquier entorno equivalente que provea `PHP + Composer + MySQL + Node/NPM` (por ejemplo Laragon, WAMP o Docker).
+
 ## 🛠️ Tecnologías
 - Laravel 12
 - Eloquent ORM
