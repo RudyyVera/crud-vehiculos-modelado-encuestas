@@ -15,6 +15,11 @@ Sistema CRUD de vehiculos y clientes desarrollado con Laravel 12.
 - SweetAlert2
 - Font Awesome
 
+## Características
+- Buscador Dinamico: filtrado de vehiculos por placa o DNI.
+- Paginacion: gestion de registros optimizada a 5 por pagina.
+- UX Robusta: manejo de errores con bloques try-catch y alertas interactivas con SweetAlert2.
+
 ## Modelado de Base de Datos (Punto 1)
 El modelado de la base de datos de encuestas anonimas y el diagrama ERD se encuentran en la carpeta:
 
@@ -24,6 +29,8 @@ Contenido esperado en esa carpeta:
 - Script SQL del modelo de encuestas.
 - Diagrama ERD.
 
+El diseño permite la creacion de encuestas dinamicas, donde cada pregunta tiene multiples opciones de respuesta (Relacion 1:N) y se registran las respuestas de forma independiente para garantizar el anonimato del usuario.
+
 ## Nota importante
 - Esta entrega NO incluye login ni autenticacion.
 - No se requiere script SQL externo ya que la estructura y datos de prueba se gestionan íntegramente mediante migraciones y seeders de Laravel.
@@ -32,6 +39,8 @@ Contenido esperado en esa carpeta:
 1. Instalar dependencias del proyecto:
 ```bash
 composer install
+npm install
+npm run build
 ```
 
 2. Crear archivo de entorno:
