@@ -1,6 +1,6 @@
 # VIP2CARS - Prueba Tecnica Laravel
 
-Proyecto CRUD de vehiculos y clientes desarrollado en Laravel.
+Sistema CRUD de vehiculos y clientes desarrollado con Laravel 12.
 
 ## Requisitos del Entorno
 - PHP 8.2+
@@ -15,12 +15,21 @@ Proyecto CRUD de vehiculos y clientes desarrollado en Laravel.
 - SweetAlert2
 - Font Awesome
 
-## Importante
+## Modelado de Base de Datos (Punto 1)
+El modelado de la base de datos de encuestas anonimas y el diagrama ERD se encuentran en la carpeta:
+
+`/BBDD_script_SQL/`
+
+Contenido esperado en esa carpeta:
+- Script SQL del modelo de encuestas.
+- Diagrama ERD.
+
+## Nota importante
 - Esta entrega NO incluye login ni autenticacion.
 - No se requiere script SQL externo ya que la estructura y datos de prueba se gestionan íntegramente mediante migraciones y seeders de Laravel.
 
-## Instalacion
-1. Instalar dependencias:
+## Guia de Instalacion (Laravel 12)
+1. Instalar dependencias del proyecto:
 ```bash
 composer install
 ```
@@ -44,7 +53,7 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-4. Generar clave de aplicacion:
+4. Generar APP_KEY:
 ```bash
 php artisan key:generate
 ```
@@ -54,15 +63,15 @@ php artisan key:generate
 php artisan migrate --seed
 ```
 
-## Uso
-- Levantar servidor:
+6. Levantar servidor de desarrollo:
 ```bash
 php artisan serve
 ```
-- Acceder directamente a:
-```text
-http://127.0.0.1:8000/vehiculos
-```
+
+## Uso
+Acceso directo al sistema:
+
+`http://127.0.0.1:8000/vehiculos`
 
 ## Seeders de Prueba
 - `ClientSeeder`
